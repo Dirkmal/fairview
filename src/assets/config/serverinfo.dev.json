@@ -1,3 +1,4 @@
 {
-  "apiUrl" : "/fairApi"
+  "apiUrl": "/fairApi",
+  "banners": "/banners"
 }

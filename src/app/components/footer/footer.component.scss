@@ -1,0 +1,22 @@
+.page-footer {
+	padding: 2em 4em;
+	font-size: 0.8em;
+}
+
+.info {
+	display: flex;
+}
+
+.info>div {
+	margin: 0 2em;
+}
+
+.info>div>div {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.info .social {
+	height: 2em;
+	width: 2em;
+}

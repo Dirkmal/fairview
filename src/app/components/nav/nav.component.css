@@ -1,0 +1,37 @@
+nav {
+	background-color: white;
+	padding: 0 20px;
+	box-shadow: none;
+}
+
+nav .nav-wrapper {
+    width: 80%;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+nav ul {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav ul li {
+	padding: 0 15px;
+}
+
+nav ul a {
+	color: #5F375B;
+	text-transform: capitalize;
+	font-size: 1.1rem;
+	font-family: 'PT Serif', Georgia, serif;
+}
+
+nav ul a:not(.banner_img):hover {
+	background-color: rgba(95, 55, 91, 0.7);
+	color: white;
+}
+
+nav ul a.banner_img:hover {
+	background-color: white;
+}

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Alert } from '../alert';
 import { AlertService } from '../alert.service';
 import { Misc } from '../misc_funcs';
-import {NgbAlertConfig} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-alert',

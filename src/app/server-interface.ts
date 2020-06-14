@@ -1,4 +1,5 @@
 export interface ServerInterface {
   apiUrl: string;
-  banners: string;
+  images: string;
+  funeral: string;
 }

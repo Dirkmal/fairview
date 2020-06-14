@@ -1,0 +1,118 @@
+
+/* pt-serif-regular - latin */
+@font-face {
+	font-family: 'PT Serif';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./assets/fonts/pt-serif/pt-serif-v11-latin-regular.woff2') format('woff2'), 
+		url('./assets/fonts/pt-serif/pt-serif-v11-latin-regular.woff') format('woff'),
+		url('./assets/fonts/pt-serif/pt-serif-v11-latin-regular.ttf') format('truetype')
+}
+/* pt-serif-italic - latin */
+@font-face {
+	font-family: 'PT Serif';
+	font-style: italic;
+	font-weight: 400;
+	src: url('./assets/fonts/pt-serif/pt-serif-v11-latin-italic.woff2') format('woff2'),
+		url('./assets/fonts/pt-serif/pt-serif-v11-latin-italic.woff') format('woff'),
+		url('./assets/fonts/pt-serif/pt-serif-v11-latin-italic.ttf') format('truetype')
+}
+  /* pt-serif-700 - latin */
+@font-face {
+	font-family: 'PT Serif';
+	font-style: normal;
+	font-weight: 700;
+	src: url('./assets/fonts/pt-serif/pt-serif-v11-latin-700.woff2') format('woff2'),
+		url('./assets/fonts/pt-serif/pt-serif-v11-latin-700.woff') format('woff'), 
+		url('./assets/fonts/pt-serif/pt-serif-v11-latin-700.ttf') format('truetype'),
+}
+  /* pt-serif-700italic - latin */
+  @font-face {
+	font-family: 'PT Serif';
+	font-style: italic;
+	font-weight: 700;
+	src: url('./assets/fonts/pt-serif/pt-serif-v11-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./assets/fonts/pt-serif/pt-serif-v11-latin-700italic.woff') format('woff'), /* Modern Browsers */
+		url('./assets/fonts/pt-serif/pt-serif-v11-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+/* open-sans-italic - latin */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url('./assets/fonts/open-sans/open-sans-v17-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('./assets/fonts/open-sans/open-sans-v17-latin-italic.woff') format('woff'), /* Modern Browsers */
+		 url('./assets/fonts/open-sans/open-sans-v17-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+/* open-sans-regular - latin */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./assets/fonts/open-sans/open-sans-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('./assets/fonts/open-sans/open-sans-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+		 url('./assets/fonts/open-sans/open-sans-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+/* open-sans-700 - latin */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url('./assets/fonts/open-sans/open-sans-v17-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('./assets/fonts/open-sans/open-sans-v17-latin-700.woff') format('woff'), /* Modern Browsers */
+		 url('./assets/fonts/open-sans/open-sans-v17-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@keyframes side_entry {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.alert {
+  animation: side_entry 1s linear;
+}
+
+.mark{
+	border: 1px solid red;
+}
+
+.mark2 {
+	border: 1px solid green;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#main {
+	margin-top: 90px;
+	position: relative;	
+	flex: 1 0 auto;
+}
+
+body {	
+	font-family: 'Open Sans', Georgia, serif;
+	font-size: 16px;
+	color: #707070;
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.heading {
+	font-family: 'PT Serif', Georgia, serif;
+	color: #000000;
+}
+
+.accent_yellow {
+	background-color: #F5F2D6;
+}
+
+.accent_yellow_text {
+	color: #F5F2D6;
+}

@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/fairvie3/public_html/
-    - /bin/cp -R dist/fairview * $DEPLOYPATH
+    - export DEPLOYPATH=/home2/fairvie3/public_html/
+    - /bin/cp -R dist/fairview/ * $DEPLOYPATH

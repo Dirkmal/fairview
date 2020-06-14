@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/fairvie3/public_html/
-    - /bin/cp -R -f dist/fairview/ * $DEPLOYPATH
+    - /bin/cp -Rf dist/fairview/ * $DEPLOYPATH

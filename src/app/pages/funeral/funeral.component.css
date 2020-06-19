@@ -1,0 +1,26 @@
+.caption {
+	width: 50%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.big_heading {
+	padding: 1em;
+	margin: 0;
+	text-align: center;
+}
+
+.portfolio {
+	text-align: center;
+	padding: 1em;
+}
+
+.carousel, .carousel-item {
+	height: 200px!important;
+}
+
+.carousel-item, .carousel-item img {
+	width: 250px;
+}

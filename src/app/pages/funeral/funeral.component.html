@@ -1,0 +1,87 @@
+<ng-template #bannerCaption>
+	<div class="caption">
+		<h4 class="heading"> 
+			Helping You Say Goodbye
+		</h4>
+	
+		<div class="body"> 
+			<p>
+				We believe in providing a personalised 
+				and professional experience. Our services are tailored 
+				to your needs and we focus on a relationship of trust 
+				and respect every step of the way.
+			</p>
+		</div>
+	</div>
+</ng-template>
+
+<app-banner [background_img]="banner_img"
+[captionTemplate]="bannerCaption"></app-banner>
+
+<h4 class="heading big_heading accent_yellow">
+	What we offer
+</h4>
+
+<ng-template #leftFlipCardI>
+	<h5 class="heading">
+		Funeral Services
+	</h5>
+</ng-template>
+
+<ng-template #rightFlipCardI>
+	<span>
+		<p>
+			We help arrange funerals worthy of 
+			your departed loved ones. We’re committed 
+			to providing you with the best and most 
+			affordable services.
+		</p>
+		
+		<b>Our Services Include:</b>
+	
+		<ul>
+			<li>Caskets</li>
+			<li>Band & Pallbearers</li>
+			<li>Hearse Services</li>
+			<li>Funeral Decorations & Flowers</li>
+		</ul>
+	
+		<button class="btn cta">
+			Contact Us
+		</button>
+	</span>
+</ng-template>
+
+<app-flip-card [leftCard]="leftFlipCardI" [left_bg]="flip_bg"
+[rightCard]="rightFlipCardI" [right_bg_col]="'white'"></app-flip-card>
+
+<ng-template #leftFlipCardII>
+	<p>
+		The Peaceful Rest (TPR)" is our private mortuary. 
+		We preserve and keep your departed ones in a secure
+		 environment and provide additional services for 
+		 honouring their memory such as embalming, makeup 
+		 and presentation.
+	</p>
+</ng-template>
+
+<ng-template #rightFlipCardII>
+	<h5 class="heading">
+		Private Mortuary
+	</h5>
+</ng-template>
+
+<app-flip-card [leftCard]="leftFlipCardII" [left_bg_col]="'white'"
+[rightCard]="rightFlipCardII" [right_bg]="flip_bg2"></app-flip-card>
+
+<div class="portfolio accent_yellow">
+	<h4 class="heading">
+		Our Portfolio
+	</h4>
+
+	<div class="carousel" id="carousel">
+		<a class="carousel-item" *ngFor="let pi of portfolio_images">
+			<img [src]="pi">
+		</a>		
+	</div>
+</div>

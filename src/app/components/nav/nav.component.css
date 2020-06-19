@@ -16,10 +16,6 @@ nav ul {
 	margin-right: auto;
 }
 
-nav ul li {
-	padding: 0 15px;
-}
-
 nav ul a {
 	color: #5F375B;
 	text-transform: capitalize;
@@ -33,5 +29,5 @@ nav ul a:not(.banner_img):hover {
 }
 
 nav ul a.banner_img:hover {
-	background-color: white;
+	background-color: rgba(0,0,0,0);
 }

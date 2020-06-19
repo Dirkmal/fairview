@@ -1,0 +1,14 @@
+.half {
+	height: 400px;
+	background-color: #F5F2D6;
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 3em;
+	position: relative;
+	text-align: center;
+}
+
+.row {
+	margin-bottom: 0;
+}

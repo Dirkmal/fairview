@@ -1,5 +1,6 @@
 {
   "apiUrl": "/fairApi",
-  "images": "/images",
-  "funeral": "funeral"
+  "images": "assets/images",
+  "funeral": "funeral",
+  "home": "home"
 }

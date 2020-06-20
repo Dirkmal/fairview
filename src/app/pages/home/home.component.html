@@ -15,7 +15,6 @@
 	</div>
 </ng-template>
 
-
 <app-banner [background_img]="banner_img" 
 [captionTemplate]="bannerCaption"></app-banner>
 
@@ -29,11 +28,10 @@
 		We’re here to support and guide you through the process of making 
 		funeral arrangements that are worthy of your loved ones.
 		
-		<button class="btn btn-block center">
+		<button class="btn btn-block center" [routerLink]="'/contact'">
 			Get in Touch
 		</button>
 	</p>
-
 </div>
 
 <ng-template #flipCardLeft>

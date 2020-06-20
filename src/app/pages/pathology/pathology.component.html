@@ -1,0 +1,45 @@
+<ng-template #bannerCaption>
+	<div class="vh_center">
+		<h4 class="heading"> 
+			A Diagnosis You Can Trust
+		</h4>
+	</div>
+</ng-template>
+
+<app-banner [background_img]="banner_img" 
+[captionTemplate]="bannerCaption"></app-banner>
+
+<div class="main_body">
+	<h4 class="heading center">
+		A Fully Fledged Pathology Department	
+	</h4>
+
+	 <p class="center">
+		We examine tissue specimens and fluid aspirates 
+		to make diagnoses. Such diagnoses are essential 
+		for accurate patient assessments and they assist 
+		in the formulation of personalized, focused therapies 
+		for patients.
+
+		<button class="btn btn-block center" [routerLink]="'/contact'">
+			Contact Us
+		</button>
+	</p>
+</div>
+
+<ng-template #flipCardLeft>
+	<div class="half">
+		<b>What we offer</b>
+	
+		<ul>
+			<li>Surgical pathology / Biopsy services</li>
+			<li>Cytopathology / FNAC (Fine Needle Aspiration Cytology)</li>
+			<li>Pap smears</li>
+			<li>Immunohistochemistry</li>
+			<li>Autopsies</li>
+		</ul>
+	</div>
+</ng-template>
+
+<app-flip-card [leftCard]="flipCardLeft"
+[right_bg]="flip_card_bg"></app-flip-card>

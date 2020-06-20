@@ -93,6 +93,17 @@
 	min-height: calc(100vh - 140px);
 }
 
+.main_body p {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main_body button {
+	display: block;
+	margin: 30px auto;
+}
+
 body {	
 	font-family: 'Open Sans', Georgia, serif;
 	font-size: 16px;
@@ -132,4 +143,17 @@ footer {
     -ms-transform: translateY(-50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.half .heading {
+	padding: 1em;
+}
+
+.half .cta {
+	padding: 1em;
+	width: 80%;
+	margin: 0 auto;
+}
+.half button {
+	margin: 1em auto;
 }

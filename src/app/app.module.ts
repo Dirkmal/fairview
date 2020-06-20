@@ -15,6 +15,8 @@ import { FuneralComponent } from './pages/funeral/funeral.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { FlipCardComponent } from './components/flip-card/flip-card.component';
 import { PathologyComponent } from './pages/pathology/pathology.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { AboutComponent } from './pages/about/about.component';
 
 export function initializeApp(api_s: ServerInfoLoader) {
   return () => api_s.load();
@@ -29,7 +31,9 @@ export function initializeApp(api_s: ServerInfoLoader) {
 	FuneralComponent,
 	BannerComponent,
 	FlipCardComponent,
-	PathologyComponent
+	PathologyComponent,
+	ContactComponent,
+	AboutComponent
   ],
   imports: [
     BrowserModule,

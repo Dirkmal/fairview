@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { FuneralComponent } from './pages/funeral/funeral.component';
 import { PathologyComponent } from './pages/pathology/pathology.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 const routes: Routes = [
@@ -10,6 +11,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'funeral', component: FuneralComponent },
   { path: 'pathology', component: PathologyComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 

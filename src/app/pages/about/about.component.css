@@ -1,0 +1,23 @@
+.caption {
+	width: 50%;
+	color: white;
+}
+
+.caption .heading {
+	color: white!important;
+}
+
+.first {
+	text-align: center;
+	padding: 2em;
+	margin-bottom: 0;
+}
+
+.padded {
+	padding: 4em;
+}
+
+.second {
+	padding: 2em;
+	margin: 0;
+}

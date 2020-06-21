@@ -37,7 +37,6 @@ export class FuneralComponent implements OnInit, AfterViewInit, OnDestroy {
 	}
 
 	ngOnDestroy(): void {
-		M.Carousel.getInstance(document.querySelector('.carousel')).destroy();
 		if (this.intvl) clearInterval(this.intvl)
 	}
 }

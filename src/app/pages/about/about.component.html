@@ -1,1 +1,63 @@
-<p>about works!</p>
+<ng-template #bannerCaption>
+	<div class="caption">
+		<h4 class="heading"> 
+			Get To Know Us
+		</h4>
+	
+		<div class="body"> 
+			<p>
+				With over 30 years of experience in the medical field, 
+				we’re not just experts in Histopathology, we also have 
+				a deep understanding of the intricacies of working 
+				with doctors, hospitals, and mortuaries to lay a loved 
+				one to rest.
+			</p>
+		</div>
+	</div>
+</ng-template>
+
+<app-banner [background_img]="banner_img"
+[captionTemplate]="bannerCaption"></app-banner>
+
+<div class="container">
+	<div class="row first">
+		<div class="col l6">			
+			<h6 class="heading">FUNERARY SERVICES</h6>
+			<p>
+				Our comprehensive funerary services include 
+				The Peaceful Rest private mortuary and 
+				Fairview Funeral Parlour where we cater to 
+				every aspect of the journey. 
+			</p>
+		</div>
+
+		<div class="col l6">			
+			<h6 class="heading">PATHOLOGY SERVICES</h6>
+			<p>
+				Our fully-fledged Pathology department conducts 
+				histopathology examinations, tissue diagnosis, 
+				autopsies (post-mortems) and more.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="row second accent_yellow">
+	<div class="col l6 padded">
+		<h6 class="heading">About Our Founder</h6>
+
+		<p>				
+			Professor Olusegun Sylvester Ojo gained his Bachelor 
+			of Medicine and Surgery from the College of Medicine, 
+			University of Lagos in 1983. He is a published author 
+			and has been a professor of Pathology and a consultant 
+			Histopathologist at Obafemi Awolowo University, Ile-Ife, 
+			for the last 30 years. He specializes in the liver and 
+			alimentary tract disorders.
+		</p>
+	</div>
+
+	<div class="col l6">
+		<img class="circular" [src]="profile">
+	</div>
+</div>

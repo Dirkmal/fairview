@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { FuneralComponent } from './pages/funeral/funeral.component';
 import { PathologyComponent } from './pages/pathology/pathology.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AboutComponent } from './pages/about/about.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'funeral', component: FuneralComponent },
   { path: 'pathology', component: PathologyComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'about', component: AboutComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 

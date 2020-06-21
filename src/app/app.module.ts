@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule }   from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AlertComponent } from './alert/alert.component';
 
 
 import { ServerInfoLoader } from './server-info-loader';
@@ -24,7 +24,6 @@ export function initializeApp(api_s: ServerInfoLoader) {
 @NgModule({
   declarations: [
     AppComponent,
-    AlertComponent,
     HomeComponent,
     NavComponent,
 	FooterComponent,
@@ -38,7 +37,8 @@ export function initializeApp(api_s: ServerInfoLoader) {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
+	HttpClientModule,
+	FormsModule
   ],
   providers: [
     ServerInfoLoader,

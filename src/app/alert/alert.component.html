@@ -1,8 +1,0 @@
-<div class="alert_box" *ngIf="alerts.length > 0">
-  <ngb-alert [dismissible]="true" (close)="dismissAlert(alert)" [type]="alert.type" *ngFor="let alert of alerts">
-    <strong>
-      <i class="fa fa-info-circle"></i> Info!
-    </strong>
-    {{alert.message}}
-  </ngb-alert>
-</div>

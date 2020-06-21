@@ -27,33 +27,37 @@
 
 <div class="container">
 	<div class="row">
-		<form class="col s12">
+		<form class="col s12" #contactForm="ngForm" (ngSubmit)="sendMessage(contactForm)">
 			<div class="row">
 				<div class="input-field col s12">
-					<input id="full_name" type="text" class="validate">
+					<input id="full_name" type="text" class="validate" name="fullname"
+					[(ngModel)]="mail.name" required>
 					<label for="full_name">Full Name</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="input-field col s12">
-					<input id="email" type="email" class="validate">
+					<input id="email" type="email" class="validate" name="contact_email"
+					[(ngModel)]="mail.email" required>
 					<label for="email">Your Email</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="input-field col s12">
-					<input id="subject" type="text" class="validate">
+					<input id="subject" type="text" class="validate" name="subject"
+					[(ngModel)]="mail.subject" required>
 					<label for="subject">Subject</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="input-field col s12">
-					<textarea id="message" class="materialize-textarea"></textarea>
+					<textarea id="message" class="materialize-textarea" name="msg"
+					[(ngModel)]="mail.message" required></textarea>
 					<label for="message">Your message</label>
 				</div>
 			</div>
 
-			<button class="btn btn-block col s12">
+			<button class="btn btn-block col s12" type="submit" [disabled]="!contactForm.form.valid">
 				SEND
 			</button>
 		</form>

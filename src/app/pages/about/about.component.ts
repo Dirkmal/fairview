@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+	banner_img = '../../../assets/images/about/1.jpg';
+	profile = '../../../assets/images/about/2.jpg';
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit(): void {
-  }
-
+	ngOnInit(): void {
+	}
 }

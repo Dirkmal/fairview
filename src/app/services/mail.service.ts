@@ -8,7 +8,7 @@ import { Mail } from '../models/mail';
   	providedIn: 'root'
 })
 export class MailService {
-	endpoint = 'http://localhost:9000/contact.php';
+	endpoint = 'https://fairviewnigeria.com/contact.php';
 
 	constructor(private http: HttpClient) {
 	}

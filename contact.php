@@ -23,18 +23,18 @@
 				$headers = "From: $customer_name <$customer_email>";
 
 				if (mail($recipient, $subject, $message, $headers)) {
-					return json_encode([
+					echo json_encode([
 						"message" => "Message sent successfully.",
 						"status" => 200
 					]);
 				} else {
-					return json_encode([
+					echo json_encode([
 						"message" => "Message not sent.",
 						"status" => 400
 					]);
 				}
 			} else {
-				return json_encode([
+				echo json_encode([
 					"message" => "Invalid email address.",
 					"status" => 400
 				]);

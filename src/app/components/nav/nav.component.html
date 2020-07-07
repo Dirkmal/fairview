@@ -1,5 +1,5 @@
 <div class="navbar-fixed">
-    <nav>
+    <nav class="hide-on-small-and-down">
       <div class="nav-wrapper">
 		  <ul>
 			<li>
@@ -14,5 +14,29 @@
 			</li>
         </ul>
       </div>
-    </nav>
+	</nav>
+	
+	<div class="mobile_nav hide-on-med-and-up">
+		<a data-target="slide-out" class="sidenav-trigger">
+			<i class="medium material-icons">menu</i>
+			
+			<img src="../../../assets/images/logo/banner_text.png">
+		</a>
+	</div>
 </div>
+
+
+<ul id="slide-out" class="sidenav" style="transform: translateX(-105%);">
+	<li>
+		<a href="home">
+			Home
+		</a>
+	</li>
+	<li *ngFor="let link of nav_links">
+		<a [href]="link.link">
+			{{ link.title }}
+		</a>
+	</li>	
+  </ul>
+
+	  

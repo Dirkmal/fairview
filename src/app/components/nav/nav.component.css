@@ -16,7 +16,7 @@ nav ul {
 	margin-right: auto;
 }
 
-nav ul a {	
+ul a {	
 	text-transform: capitalize;
 	font-size: 1.1rem;
 	font-family: 'PT Serif', Georgia, serif;
@@ -29,4 +29,9 @@ nav ul a:not(.banner_img):hover {
 
 nav ul a.banner_img:hover {
 	background-color: rgba(0,0,0,0);
+}
+
+.mobile_nav {
+	height: 100%;
+	width: 100%;
 }

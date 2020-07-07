@@ -21,7 +21,6 @@ export class MailService {
 	sendMail(mail: Mail): Observable<any> {
 		return this.http.post(this.endpoint, {data: mail})
 			.pipe(map((res) => {
-				console.log(res);
 				return res;
 			}),
 			catchError(this.handleError)

@@ -94,14 +94,14 @@
 }
 
 .main_body p {
-	width: 50%;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .main_body button {
 	display: block;
-	margin: 30px auto;
+	margin: 10px auto;
 }
 
 body {	
@@ -146,7 +146,7 @@ footer {
 }
 
 .half .heading {
-	padding: 1em;
+	padding: .5em;
 }
 
 .half .cta {
@@ -160,4 +160,26 @@ footer {
 
 a {
 	color: #5F375B!important;
+}
+
+.bigger_screen {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.main_body p {
+		width: 50%;
+	}
+
+	.main_body button {
+		margin: 30px auto;
+	}
+
+	.bigger_screen {
+		display: contents;
+	}
+
+	.half .heading {
+		padding: 1em;
+	}
 }

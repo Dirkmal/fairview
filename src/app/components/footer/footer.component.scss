@@ -1,14 +1,15 @@
-.page-footer {
-	padding: 20px 4em;
+.page-footer {	
+	height: auto;
 	font-size: 0.8em;
 }
 
 .info {
 	display: flex;
+	flex-direction: column;
 }
 
 .info>div {
-	margin: 0 2em;
+	margin: 0 1em;
 }
 
 .info>div>div {
@@ -19,4 +20,20 @@
 .info .social {
 	height: 2em;
 	width: 2em;
+	margin: .5em 1em;
+}
+
+.info .social img {
+	height: 2em;
+	width: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+	.page-footer {
+		padding: 20px 2em;
+	}
+	
+	.info {
+		flex-direction: row;
+	}
 }

@@ -73,20 +73,16 @@
   }
 }
 
-.alert {
-  animation: side_entry 1s linear;
-}
-
-.mark{
-	border: 1px solid red;
-}
-
-.mark2 {
-	border: 1px solid green;
-}
-
 * {
 	box-sizing: border-box;
+}
+
+nav {
+	height: 64px!important;
+}
+
+.sidenav-trigger:hover {
+	cursor: pointer;
 }
 
 #main {
@@ -94,7 +90,7 @@
 }
 
 .main_body p {
-	width: 80%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -114,6 +110,7 @@ body {
 	font-family: 'PT Serif', Georgia, serif;
 	color: #000000;
 	width: 100%;
+	padding: 0 .5em;
 }
 
 .accent_yellow {
@@ -150,10 +147,11 @@ footer {
 }
 
 .half .cta {
-	padding: 1em;
-	width: 80%;
+	padding: .5em;
+	width: 90%;
 	margin: 0 auto;
 }
+
 .half button {
 	margin: 1em auto;
 }

@@ -1,13 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, APP_INITIALIZER } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule }   from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-
-import { ServerInfoLoader } from './server-info-loader';
 import { HomeComponent } from './pages/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -18,9 +16,6 @@ import { PathologyComponent } from './pages/pathology/pathology.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 
-export function initializeApp(api_s: ServerInfoLoader) {
-  return () => api_s.load();
-}
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,15 +34,6 @@ export function initializeApp(api_s: ServerInfoLoader) {
     AppRoutingModule,
 	HttpClientModule,
 	FormsModule
-  ],
-  providers: [
-    ServerInfoLoader,
-    {
-      provide: APP_INITIALIZER,
-      useFactory: initializeApp,
-      deps: [ServerInfoLoader],
-      multi: true
-    }
   ],
   bootstrap: [AppComponent]
 })

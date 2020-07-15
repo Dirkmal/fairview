@@ -6,10 +6,10 @@
 	
 		<div class="body"> 
 			<p>
-				We believe in providing a personalised 
-				and professional experience. Our services are tailored 
-				to your needs and we focus on a relationship of trust 
-				and respect every step of the way.
+				We believe in providing a personalised and 
+				professional experience. Our services are 
+				tailored to your needs and we cultivate 
+				trust and respect every step of the way.
 			</p>
 		</div>
 	</div>
@@ -23,33 +23,35 @@
 </h4>
 
 <ng-template #leftFlipCardI>
-	<h5 class="heading">
-		Funeral Services
-	</h5>
 </ng-template>
 
 <ng-template #rightFlipCardI>
-	<span>
-		<p>
-			We help arrange funerals worthy of 
-			your departed loved ones. We’re committed 
-			to providing you with the best and most 
-			affordable services.
-		</p>
+	<div>
+		<h5 class="heading">
+			Funeral Services
+		</h5>
+		<span>
+			<p>
+				We help arrange funerals worthy of 
+				your departed loved ones. We’re committed 
+				to providing you with the best and most 
+				affordable services.
+			</p>
+			
+			<b>Our Services Include:</b>
 		
-		<b>Our Services Include:</b>
-	
-		<ul>
-			<li>Caskets</li>
-			<li>Band & Pallbearers</li>
-			<li>Hearse Services</li>
-			<li>Funeral Decorations & Flowers</li>
-		</ul>
-	
-		<button class="btn btn-block" [routerLink]="['/contact']" type="button">
-			Contact Us
-		</button>
-	</span>
+			<ul>
+				<li>Caskets</li>
+				<li>Band & Pallbearers</li>
+				<li>Hearse Services</li>
+				<li>Funeral Decorations & Flowers</li>
+			</ul>
+		
+			<button class="btn btn-block" [routerLink]="['/contact']" type="button">
+				Contact Us
+			</button>
+		</span>
+	</div>
 </ng-template>
 
 <app-flip-card [leftCard]="leftFlipCardI" [left_bg]="flip_bg"
@@ -58,19 +60,21 @@
 <hr class="hide-on-med-and-up">
 
 <ng-template #leftFlipCardII>
-	<p>
-		The Peaceful Rest (TPR)" is our private mortuary. 
-		We preserve and keep your departed ones in a secure
-		 environment and provide additional services for 
-		 honouring their memory such as embalming, makeup 
-		 and presentation.
-	</p>
+	<div>
+		<h5 class="heading center">
+			Private Mortuary
+		</h5>
+		<p>
+			The Peaceful Rest (TPR)" is our private mortuary. 
+			We preserve and keep your departed ones in a secure
+			 environment and provide additional services for 
+			 honouring their memory such as embalming, makeup 
+			 and presentation.
+		</p>
+	</div>
 </ng-template>
 
-<ng-template #rightFlipCardII>
-	<h5 class="heading">
-		Private Mortuary
-	</h5>
+<ng-template #rightFlipCardII>	
 </ng-template>
 
 <app-flip-card [leftCard]="leftFlipCardII" [left_bg_col]="'white'"

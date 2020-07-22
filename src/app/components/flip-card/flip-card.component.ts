@@ -34,6 +34,8 @@ export class FlipCardComponent implements OnInit {
 		this.right_card_style = Object.assign({}, {'background-color': col});
 	}
 
+	@Input() reverse: Boolean = false; // to activate the CSS reverse class on mobile 
+
 	constructor() { }
 
 	ngOnInit(): void {

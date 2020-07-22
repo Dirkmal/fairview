@@ -57,8 +57,6 @@
 <app-flip-card [leftCard]="leftFlipCardI" [left_bg]="flip_bg"
 [rightCard]="rightFlipCardI" [right_bg_col]="'white'"></app-flip-card>
 
-<hr class="hide-on-med-and-up">
-
 <ng-template #leftFlipCardII>
 	<div>
 		<h5 class="heading center">
@@ -78,7 +76,7 @@
 </ng-template>
 
 <app-flip-card [leftCard]="leftFlipCardII" [left_bg_col]="'white'"
-[rightCard]="rightFlipCardII" [right_bg]="flip_bg2"></app-flip-card>
+[rightCard]="rightFlipCardII" [right_bg]="flip_bg2" [reverse]="true"></app-flip-card>
 
 <div class="portfolio accent_yellow">
 	<h4 class="heading">

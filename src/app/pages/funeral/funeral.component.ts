@@ -16,7 +16,7 @@ export class FuneralComponent implements OnInit, AfterViewInit, OnDestroy {
 
 	intvl: any;
 	constructor() {
-		for (let i = 0; i < 12; i++) {
+		for (let i = 0; i < 18; i++) {
 			this.portfolio_images.push(
 				this.images + 'portfolio/' + (i+1) + '.jpeg'
 			);			

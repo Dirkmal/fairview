@@ -10,8 +10,9 @@ import { takeWhile } from 'rxjs/operators';
 export class BannerComponent implements OnInit {
 	@Input() images = [];
 	@Input() slider: boolean;
+	@Input() height: number;
 	@Input() captionTemplate: TemplateRef<any>;
-	@Input() ctaTemplate: TemplateRef<any>
+	@Input() ctaTemplate: TemplateRef<any>;
 	
 	curr_slide = 0;
 	background_img = ''

@@ -173,8 +173,24 @@ hr {
 	.half .heading {
 		padding: 1em;
 	}
+
+	.collapsible-body {
+		padding: 2rem!important;
+	}
 }
 
 .btn {
 	background-color: #a26f9d!important;
+}
+
+.carousel .active {
+	visibility: visible!important;
+}
+
+.carousel .carousel-item {
+	width: 100%!important;
+}
+
+.justify_text {
+	text-align: justify;
 }

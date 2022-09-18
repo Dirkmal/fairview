@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },
   { path: 'gallery', component: ServicesGalleryComponent },
-  { path: 'gallery2', component: Gallery2Component },
+  // { path: 'gallery2', component: Gallery2Component },
   { path: 'help', component: FaqComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

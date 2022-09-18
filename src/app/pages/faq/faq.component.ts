@@ -9,7 +9,7 @@ declare const M: any;
   styleUrls: ['./faq.component.scss']
 })
 export class FaqComponent implements OnInit {
-
+  banner_img = ['../../../assets/images/help/b2.jpg'];
   constructor() { }
 
   ngOnInit(): void {

@@ -1,4 +1,5 @@
-<div class="banner" [ngStyle]="{'background-image': 'url(' + background_img + ')'}">
+<div class="banner" [ngStyle]="{'background-image': 'url(' + background_img + ')'}"
+	[style.height]="height + 'px'">
 	<ng-container *ngTemplateOutlet="captionTemplate">
 	</ng-container>
 	<ng-container *ngTemplateOutlet="ctaTemplate"></ng-container>

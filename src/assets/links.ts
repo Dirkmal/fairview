@@ -17,6 +17,14 @@ export class Links {
 		{
 			title: 'about us',
 			link: 'about'
+		},
+		{
+			title: 'gallery',
+			link: 'gallery'
+		},
+		{
+			title: 'help',
+			link: 'help'
 		}
 	]
 }

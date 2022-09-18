@@ -1,0 +1,53 @@
+.gallery_img {
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    width: 20em;
+    height: 280px;
+    position: relative;
+}
+
+.gallery_img img {
+    height: 100%!important;
+    width: 100%!important;
+    border: 3px solid #a36f9d;
+    border-radius: 1em;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #00000096;
+    margin: 0 1em;
+    border-radius: 0 0 1em 1em;
+}
+
+.gallery_img:hover .overlay {
+    opacity: 1;
+}
+
+.caption {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn {
+    margin: 0 0.4em;
+}
+
+.btn .active {
+    background-color: #a36f9d;
+}

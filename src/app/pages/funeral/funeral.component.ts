@@ -8,7 +8,7 @@ declare const M: any;
 })
 export class FuneralComponent implements OnInit, AfterViewInit, OnDestroy {
 	images = '../../../assets/images/funeral/'
-	banner_img = this.images + '1.jpg';
+	banner_img = [this.images + '1.jpg'];
 	flip_bg = this.images + '2.jpg';
 	flip_bg2 = this.images + '4.jpg';
 

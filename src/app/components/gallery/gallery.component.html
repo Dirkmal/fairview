@@ -1,0 +1,20 @@
+<div class="">
+    <div class="row">
+        <div class="col s12 center">
+            <button class="btn filter-button" (click)="toggleVisible('all')">All</button>
+            <button class="btn filter-button" *ngFor="let cat of categories" (click)="toggleVisible(cat)">{{ cat }}</button>                    
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m6 l4 gallery_img filter {{item.category}}" *ngFor="let item of items">            
+            <img [src]="item.img">   
+            
+            <div class="overlay">
+                <span class="caption">
+                    {{ item.caption }}
+                </span>         
+            </div>
+        </div>               
+    </div>        
+</div>

@@ -1,5 +1,6 @@
 <ng-template #bannerCaption>
-	<div class="caption">
+	<div class="caption valign-wrapper">
+		<span>
 		<h4 class="heading"> 
 			Helping You Say Goodbye
 		</h4>
@@ -12,10 +13,11 @@
 				trust and respect every step of the way.
 			</p>
 		</div>
+		</span>
 	</div>
 </ng-template>
 
-<app-banner [background_img]="banner_img"
+<app-banner [images]="banner_img"
 [captionTemplate]="bannerCaption"></app-banner>
 
 <h4 class="heading big_heading accent_yellow">

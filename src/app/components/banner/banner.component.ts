@@ -36,7 +36,6 @@ export class BannerComponent implements OnInit {
 		this.curr_slide++;
 
 		this.background_img = this.images[this.curr_slide]
-		console.log('current slide is: ', this.curr_slide)
 	}
 
 }

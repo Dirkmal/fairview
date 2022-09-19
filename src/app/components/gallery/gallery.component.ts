@@ -18,8 +18,7 @@ export class GalleryComponent implements OnInit {
     //get unique categories
     this.categories = this.items.map((item => item.category)).filter((value, index, self) => {
       return self.indexOf(value) === index
-    });
-    console.log(this.categories);
+    });    
   }
 
   toggleVisible(filter) {
@@ -29,8 +28,7 @@ export class GalleryComponent implements OnInit {
       })   
     } else {
       document.querySelectorAll(`.filter`).forEach(item => {
-        item['hidden'] = true;
-        console.log(item);
+        item['hidden'] = true;        
       }) 
       document.querySelectorAll(`.${filter}`).forEach(item => {
         item['hidden'] = false;

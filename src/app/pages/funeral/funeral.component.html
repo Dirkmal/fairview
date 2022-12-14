@@ -81,13 +81,89 @@
 [rightCard]="rightFlipCardII" [right_bg]="flip_bg2" [reverse]="true"></app-flip-card>
 
 <div class="portfolio accent_yellow">
-	<h4 class="heading">
-		Our Portfolio
-	</h4>
+	<div class="row">
+		<div class="col s12 m4">
+		  <div class="card">
+			<div class="card-image">
+			  <img [src]="si_url+ 'caskets/1.jpeg'">			  
+			</div>
+			<div class="card-content">
+			  <p>
+				We offer a wide variety of high-quality caskets in different styles, 
+				sizes, and materials to suit any budget. Our caskets are carefully 
+				crafted to provide a beautiful and dignified resting place for your loved ones.
+			  </p>
+			</div>
+			<div class="card-action">
+				<a class="waves-effect waves-light modal-trigger" href="#modal1"
+				(click)="carousel_switch.emit('caskets')">
+					Caskets
+				</a>
+			</div>
+		  </div>
+		</div>
 
-	<div class="carousel" id="carousel">
-		<a class="carousel-item" *ngFor="let pi of portfolio_images">
-			<img [src]="pi">
-		</a>		
+		<div class="col s12 m4">
+			<div class="card">
+			  <div class="card-image">
+				<img [src]="si_url+ 'hearse/1.jpeg'">
+			  </div>
+			  <div class="card-content">
+				<p>
+					Our team is trained and experienced in providing respectful and 
+					dignified support for the casket during the funeral service. 
+					We are dedicated to making the process as smooth and seamless 
+					as possible for your family.
+				</p>
+			  </div>
+			  <div class="card-action">
+				<a class="waves-effect waves-light modal-trigger" href="#modal1"
+				(click)="carousel_switch.emit('hearse')">
+					Pall Bearers & Hearse
+				</a>
+			  </div>
+			</div>
+		</div>
+
+		<div class="col s12 m4">
+			<div class="card">
+			  <div class="card-image">
+				<img [src]="si_url+ 'accessories/1.jpeg'">
+			  </div>
+			  <div class="card-content">
+				<p>
+					We offer a variety of internment accessories to help you personalize 
+					the final resting place of your loved one. Our selection includes 
+					grave markers, grave liners, vaults, and more.
+				</p>
+			  </div>
+			  <div class="card-action">
+				<a class="waves-effect waves-light modal-trigger" href="#modal1"
+				(click)="carousel_switch.emit('accessories')">
+				Internment Accessories
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal Structure -->
+	<div id="modal1" class="modal">
+	  	<div class="modal-content">		
+			<div class="carousel" id="carousel">
+				<div class="carousel-container">
+					<a class="carousel-item" *ngFor="let pi of all_si">
+						<img src="{{pi.img}}">
+					</a>
+				</div>
+			</div>
+		
+			<a (click)="carousel_switch.emit('prev')" class="carousel_nav left btn-floating btn waves-effect waves-light">
+				<i class="large material-icons">arrow_back</i>
+			</a>
+
+			<a (click)="carousel_switch.emit('next')" class="carousel_nav right btn-floating btn waves-effect waves-light">
+				<i class="large material-icons">arrow_forward</i>
+			</a>
+		</div>
 	</div>
 </div>
